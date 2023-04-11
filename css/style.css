@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-font:'Josefin Sans';
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --text-color:#999999;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    background-color: var(--black-color);
+    padding-top: 80px;
+}
+.main{
+    padding-top: 400px;
+    padding-bottom: 400px;
+    display: none;
+}
+.img-section{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+@media(min-width:1200px){
+    .img-section{
+        width: 25%;
+        position: fixed;
+        top: 50%;
+        left: 100px; 
+        transform: translateY(-50%);
+    }
+}
+@media(max-width:576px){
+    .img-section{
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0; 
+        transform: translateY(-50%);
+    }
+    .main{
+        display: block;
+    }
+}
+@media(max-width:767px){
+    .img-section{
+        width:80%; 
+        position:absolute;
+        top: 50%;
+        left: 100px; 
+        transform: translateY(-50%);
+    }
+    .main{
+        display: block;
+    }
+}
+@media(max-width:991px){
+    .img-section{
+        width:60%;
+        position:absolute;
+        top: 50%;
+        left: 100px; 
+        transform: translateY(-50%);
+    }
+    .main{
+        display: block;
+    }
+}
+@media(max-width:1199px){
+    .img-section{
+        width:40%;
+        position:absolute;
+        top: 50%;
+        left: 100px; 
+        transform: translateY(-50%);
+    }
+    .main{
+        display: block;
+    }
+}
+.img-section .card{
+    width: 100%;
+    background-color:transparent;
+    border-radius: 30px;
+    border: 1px solid var(--white-color);
+    overflow: hidden;
+}
+.img-section .card img{
+    object-fit: cover;
+    object-position:  center center;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+.img-section .card-title{
+    color: var(--white-color);
+    font-size: 24px;
+}
+.img-section .card-text{
+    color: var(--white-color);
+    font-size: 18px;
+}
+.social-icon a{
+    padding:5px 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 35px;
+    display: inline-block;
+    color: var(--white-color);
+}
+.social-icon a:hover ,.section-title:hover {
+    background-color: aliceblue;
+    color: var(--black-color);
+}
+.section-title{
+    padding: 5px 15px;
+    border: 1px solid var(--white-color);
+    display: inline-block;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.section-title span{
+    text-transform: uppercase;
+}
+.introduce h1{
+    font-size: 60px;
+    color: var(--white-color);
+    font-weight: 300;
+}
+.introduce p ,.about p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.about h2 ,.service h2 ,.skill h2 ,.portfolio h2{
+    font-size: 42px;
+    color: var(--white-color);
+    font-weight: 300;
+}
+.service .card{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--white-color);
+    overflow: hidden;
+}
+.service .card img{
+    border-radius: 20px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in;
+    transform: scale(1);
+}
+.service img:hover ,.skill-img img:hover ,.img-section img:hover ,.img-gallery img:hover{
+    transform: scale(0.9);
+}
+.service h5{
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 300;
+}
+.service p{
+    color: var(--white-color);
+}
+.skill-img{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+.skill-img img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in;
+}
+.portfolio h4{
+    color: var(--white-color);
+}
+.portfolio span{
+    color: var(--white-color);
+    font-size: 18px;
+}
+.portfolio p{
+    color: var(--text-color);
+    font-size: 16px;
+}
